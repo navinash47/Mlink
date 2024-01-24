@@ -1,7 +1,10 @@
 package com.example.mlink
 
 import android.os.Bundle
+import android.view.View
 import android.widget.ArrayAdapter
+import android.widget.Button
+import android.widget.EditText
 import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -18,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val spinner : Spinner= findViewById(R.id.action_bar_spinner_select_login)
+        val spinner : Spinner = findViewById(R.id.action_bar_spinner_select_login)
         ArrayAdapter.createFromResource(
             this,
             R.array.action_bar_spinner_select_login,
@@ -27,5 +30,19 @@ class MainActivity : AppCompatActivity() {
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             spinner.adapter= adapter
         }
+
+        var usern : EditText
+        var passw : EditText
+        val loginButton: Button = findViewById(R.id.Login)
+        loginButton.setOnClickListener(object : View.OnClickListener{
+            override fun onClick(v: View?) {
+                usern = findViewById(R.id.Username)
+                passw = findViewById(R.id.Password)
+                val tempSpinValue : String = spinner.selectedItem.toString()
+                println("[INFO] Usertype : $tempSpinValue")
+                println("[INFO] UserName : "+ usern.text.toString())
+                println("[INFO] PassWord : "+ passw.text.toString())
+            }
+        })
     }
 }
