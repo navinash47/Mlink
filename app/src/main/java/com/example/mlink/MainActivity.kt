@@ -49,5 +49,12 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         })
+        val registerButton : Button = findViewById(R.id.Register)
+        registerButton.setOnClickListener(object : View.OnClickListener{
+            override fun onClick(p0: View?) {
+                val intent = Intent(context, RegisterActivity::class.java)
+                startActivity(intent)
+            }
+        })
     }
 }
