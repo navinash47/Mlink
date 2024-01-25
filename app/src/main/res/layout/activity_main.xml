@@ -11,8 +11,8 @@
 
     <EditText
         android:id="@+id/Username"
+        style="@style/RoundedEditText"
         android:layout_width="250dp"
-        android:backgroundTint="@color/black"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:hint="@string/username"
@@ -21,65 +21,73 @@
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/Password"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.945" />
+        app:layout_constraintVertical_bias="0.8" />
 
     <EditText
         android:id="@+id/Password"
+        style="@style/RoundedEditText"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="228dp"
+        android:layout_marginTop="200dp"
         android:hint="@string/password"
         android:importantForAutofill="no"
         android:inputType="textPassword"
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/action_bar_spinner_select_login"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" />
+        app:layout_constraintVertical_bias="0.48" />
 
     <Spinner
         android:id="@+id/action_bar_spinner_select_login"
+        style="@style/RoundedEditText"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="300dp"
         android:minHeight="48dp"
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toTopOf="@+id/Login"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/Login"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:backgroundTint="#5FB362"
+        android:backgroundTint="@color/light_blue_600"
         android:gravity="center"
         android:text="@string/login"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/Register"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.667" />
 
     <Button
         android:id="@+id/Register"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#5FB362"
+        android:backgroundTint="@color/light_blue_600"
+        android:gravity="center"
         android:text="@string/register"
         android:textColor="@color/black"
-        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.737"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.947"
+        tools:ignore="MissingConstraints"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
