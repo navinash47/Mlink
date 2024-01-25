@@ -42,9 +42,9 @@ class MainActivity : AppCompatActivity() {
                 usern = findViewById(R.id.Username)
                 passw = findViewById(R.id.Password)
                 val tempSpinValue : String = spinner.selectedItem.toString()
-                println("[INFO] Usertype : $tempSpinValue")
-                println("[INFO] UserName : "+ usern.text.toString())
-                println("[INFO] PassWord : "+ passw.text.toString())
+                println("[INFO] Login Page - Usertype : $tempSpinValue")
+                println("[INFO] Login Page - UserName : "+ usern.text.toString())
+                println("[INFO] Login Page - PassWord : "+ passw.text.toString())
                 val intent = Intent ( context, HomepageActivity::class.java)
                 startActivity(intent)
             }
