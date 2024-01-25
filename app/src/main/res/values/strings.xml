@@ -4,8 +4,8 @@
     <string name="mentee_login">Mentee Login</string>
     <string name="username">Username/Phone/Email</string>
     <string name="password">Password</string>
-    <string name="login">LOGIN</string>
-    <string name="register">REGISTER</string>
+    <string name="login">Signin</string>
+    <string name="register">Create New Acccount</string>
     <string-array name="action_bar_spinner_select_login">
         <item>Mentor</item>
         <item>Mentee</item>
